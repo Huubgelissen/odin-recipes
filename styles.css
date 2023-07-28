@@ -1,0 +1,167 @@
+* {
+    font-family: garamond;
+    font-size: large;
+}
+
+@keyframes coloring {
+    0%   {background-color:red; opacity: 100%; color: blue; left:0px; top:0px;}
+    25%  {background-color:yellow; opacity: 60%; color: green; left:200px; top:0px;}
+    50%  {background-color:blue; opacity: 20%; color: red; left:200px; top:200px;}
+    75%  {background-color:green; opacity: 60%; color: yellow;left:0px; top:200px;}
+    100% {background-color:red; opacity: 100%; color: blue; left:0px; top:0px;}
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg); opacity:100%}
+    to {transform: rotate(359deg); opacity:0%}
+}
+
+@keyframes falling {
+    from {left: 0px; top: 0px;}
+    to {left: 0px; top: 200px;}
+}
+
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%}
+}
+
+h2 {
+    font-size: 58px;
+    margin-left: 100px;
+}
+
+h2.old_subtitle {
+    position: absolute;
+    top: 200px;
+}
+
+h2.new_subtitle {
+    position: absolute;
+    top: 200px;
+    opacity: 0%;
+    animation: fade-in;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+span {
+    padding: 0;
+    margin: 0;
+}
+
+
+.letter {
+    display: inline-block;
+    font-size: 58px;
+    animation-delay: 1s;
+    animation: rotation 3s linear;
+    animation-fill-mode: forwards;
+}
+
+.letter.two {
+    animation-delay: 0.5s;
+}
+
+.letter.three {
+    animation-delay: 1s;
+}
+
+.letter.four {
+    animation-delay: 1.5s;
+}
+
+.letter.five {
+    animation-delay: 2s;
+}
+
+.letter.six {
+    animation-delay: 2.5s;
+}
+
+.letter.seven {
+    animation-delay: 3s;
+}
+
+.letter.eight {
+    animation-delay: 3.5s;
+}
+
+.letter.nine {
+    animation-delay: 4s;
+}
+
+.letter.ten {
+    animation-delay: 4.5s;
+}
+
+.letter.eleven {
+    animation-delay: 5s;
+}
+
+.letter.twelve {
+    animation-delay: 5.5s;
+}
+
+.letter.thirteen {
+    animation-delay: 5.5s;
+}
+
+.letter.fourteen {
+    animation-delay: 6.5s;
+}
+.letter.fifteen {
+    animation-delay: 7s;
+}
+.letter.sixteen {
+    animation-delay: 7.5s;
+}
+.letter.seventeen {
+    animation-delay: 8s;
+}
+.letter.eighteen {
+    animation-delay: 8.5s;
+}
+.letter.nineteen {
+    animation-delay: 9s;
+}
+.letter.twenty {
+    animation-delay: 9.5s;
+}
+
+
+h1 {
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+    margin: 100px;
+
+    animation-name: coloring;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+li {
+    text-align: center;
+    animation: rotation 2s infinite linear;
+}
+
+.recipe h1,
+.recipe h2,
+.recipe h3,
+.recipe h4 {
+    color: red;
+}
+
+.recipe .backgrounded {
+    background-color: aqua;
+}
+
+.recipe ul {
+    text-decoration: double;
+    text-shadow: hsl(from color h s l);
+    color: aqua;
+}
